@@ -28,20 +28,10 @@
 - **Serve locally** Use your favorite static server (`python -m http.server`, `npx serve`, or VS Code Live Server) to enjoy smooth routing and asset loading.
 - **Mobile check** Open DevTools and toggle device mode to see responsive tricks in action.
 
-## Roll Your Own Mini
-- **Duplicate** Copy the template from an existing project folder and rename it `Project-X-Your-Title/`.
-- **Build** Keep it `HTML + CSS + JS` only — bonus points for clever DOM sorcery.
-- **Showcase** Add a row to the Projects table with a catchy description, tech tags, and a GIF or screenshot.
-- **Commit** Use energetic commit messages and share what you learned in the description.
-
 <p align="center">
   <img src="https://media.giphy.com/media/l4pLY0zySvluEvr0c/giphy.gif" alt="Cartoon cat dreaming up ideas" width="360" />
 </p>
 
-## Behind the Scenes
-- **Design** Crafted with playful typography, bold gradients, and motion that respects reduced-motion settings.
-- **Accessibility** Keyboard navigation, semantic HTML, and plenty of contrast are always on the checklist.
-- **Performance** Light on dependencies, heavy on creativity. Everything loads fast and works offline once cached.
 
 ## Connect
 - **Creator** [Bhushan Pawar](https://bhushan-pawar.vercel.app/)
