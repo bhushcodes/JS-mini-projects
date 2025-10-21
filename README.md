@@ -34,11 +34,6 @@
 - **Showcase** Add a row to the Projects table with a catchy description, tech tags, and a GIF or screenshot.
 - **Commit** Use energetic commit messages and share what you learned in the description.
 
-## Roadmap
-- **Now Cooking** To-Do List app blueprint — add/edit/delete tasks, localStorage persistence, and playful micro-animations.
-- **Idea Vault** Waiting for the next spark. Casting a wide net for future minis (games? widgets? surprise tools?). Suggestions welcome!
-- **Docs** Add contribution guide and mini project template checklist.
-
 <p align="center">
   <img src="https://media.giphy.com/media/l4pLY0zySvluEvr0c/giphy.gif" alt="Cartoon cat dreaming up ideas" width="360" />
 </p>
