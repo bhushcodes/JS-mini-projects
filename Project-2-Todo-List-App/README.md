@@ -1,7 +1,7 @@
 # To-Do List App 📝
 
 <div align="center">
-  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" alt="Cat typing on computer">
+  <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" width="300" alt="Cat typing on computer">
   <br>
   <em>When you're coding at 3 AM and still going strong! 😺</em>
 </div>
@@ -24,7 +24,7 @@ A clean, responsive to-do list application built with vanilla JavaScript, HTML, 
 
 ## Quick Start
 
-<img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" width="200" align="right" alt="Excited cat">
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" width="200" align="right" alt="Excited cat">
 
 ### Local Development
 
@@ -80,7 +80,7 @@ To-Do-List/
 ## Usage Guide
 
 <div align="center">
-  <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" width="250" alt="Cat working on laptop">
+  <img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" width="250" alt="Cat working on laptop">
   <br>
   <em>Me organizing my life with this app 🐱</em>
 </div>
@@ -104,7 +104,7 @@ To-Do-List/
 3. Task is removed with animation
 
 <div align="center">
-  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" width="200" alt="Cat celebrating">
+  <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" width="200" alt="Cat celebrating">
   <br>
   <em>When you finally complete all your tasks! 🎉</em>
 </div>
@@ -217,7 +217,7 @@ MIT License - Feel free to use for personal or commercial projects.
 Suggestions and improvements welcome! This is a learning project demonstrating vanilla JavaScript best practices.
 
 <div align="center">
-  <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" width="250" alt="Cat with glasses coding">
+  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" width="250" alt="Cat coding">
   <br>
   <em>Ready to contribute? Let's code together! 😸</em>
 </div>
@@ -225,7 +225,7 @@ Suggestions and improvements welcome! This is a learning project demonstrating v
 ---
 
 <div align="center">
-  <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="150" alt="Typing cat">
+  <img src="https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif" width="150" alt="Typing cat">
   <br>
   <strong>Built with ❤️ using vanilla JavaScript</strong>
   <br>

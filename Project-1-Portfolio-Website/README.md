@@ -1,7 +1,7 @@
 # Portfolio Website 💼
 
 <div align="center">
-  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" alt="Cat typing on computer">
+  <img src="https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif" width="300" alt="Cat typing on computer">
   <br>
   <em>Building my portfolio like a pro! 😺</em>
 </div>
@@ -25,7 +25,7 @@ A modern, responsive portfolio website showcasing projects, resume, and contact 
 
 ## Quick Start
 
-<img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" width="200" align="right" alt="Excited cat">
+<img src="https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/giphy.gif" width="200" align="right" alt="Excited cat">
 
 ### Local Development
 
@@ -108,7 +108,7 @@ Portfolio-Website/
 ## Usage Guide
 
 <div align="center">
-  <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" width="250" alt="Cat working on laptop">
+  <img src="https://media.giphy.com/media/Ln2dAW9oycjgmTpjX9/giphy.gif" width="250" alt="Cat working on laptop">
   <br>
   <em>Customizing my portfolio like a boss! 🐱</em>
 </div>
@@ -151,7 +151,7 @@ Replace `BhushanPawarResume.pdf` with your own resume PDF file.
 Replace files in `bhushcodes-favicon/` folder with your own favicon assets.
 
 <div align="center">
-  <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" width="200" alt="Cat celebrating">
+  <img src="https://media.giphy.com/media/kyLYXonQYYfwYDIeZl/giphy.gif" width="200" alt="Cat celebrating">
   <br>
   <em>Portfolio looking amazing! 🎉</em>
 </div>
@@ -307,7 +307,7 @@ MIT License - Feel free to use for personal or commercial projects.
 Suggestions and improvements welcome! This is a portfolio template demonstrating modern web development best practices.
 
 <div align="center">
-  <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" width="250" alt="Cat with glasses coding">
+  <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="250" alt="Cat working on computer">
   <br>
   <em>Ready to build your portfolio? Let's code! 😸</em>
 </div>
@@ -315,7 +315,7 @@ Suggestions and improvements welcome! This is a portfolio template demonstrating
 ---
 
 <div align="center">
-  <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="150" alt="Typing cat">
+  <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" width="150" alt="Cat typing">
   <br>
   <strong>Built with ❤️ using vanilla JavaScript</strong>
   <br>
