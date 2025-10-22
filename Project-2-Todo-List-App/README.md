@@ -217,7 +217,7 @@ MIT License - Feel free to use for personal or commercial projects.
 Suggestions and improvements welcome! This is a learning project demonstrating vanilla JavaScript best practices.
 
 <div align="center">
-  <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" width="250" alt="Cat with glasses coding">
+  <img src="https://media1.tenor.com/m/cb9L14uH-YAAAAAd/cool-fun.gif" width="250" alt="Cat with glasses coding">
   <br>
   <em>Ready to contribute? Let's code together! 😸</em>
 </div>
