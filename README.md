@@ -10,11 +10,11 @@
 - **Mission** Ship mini projects fast, learn something new every time, and keep things fun.
 
 ## Projects on Stage
-| Project | What You'll See | Tech | Peek |
-| --- | --- | --- | --- |
-| [`Project-1-Portfolio-Website/`](Project-1-Portfolio-Website/) | A vibrant personal portfolio with animated hero fonts, Vanta.js waves, and a friendly contact form. | HTML · CSS · JavaScript | ![Portfolio preview](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif) |
-| [`Project-2-Todo-List-App/`](Project-2-Todo-List-App/) | Add, edit, and delete tasks right in the browser with localStorage to keep them around forever. | HTML · CSS · JavaScript | ![To-do preview](https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif) |
-| *(Coming Soon)* | — | — | ![Coming soon](https://media.giphy.com/media/tXL4FHPSnVJ0A/giphy.gif) |
+| Project | What You'll See | Tech | Live Preview | Peek |
+| --- | --- | --- | --- | --- |
+| [`Project-1-Portfolio-Website/`](Project-1-Portfolio-Website/) | A vibrant personal portfolio with animated hero fonts, Vanta.js waves, and a friendly contact form. | HTML · CSS · JavaScript | [🚀 View Live](https://codepen.io/bhushcodes/full/ByjrpMd) | ![Portfolio preview](https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif) |
+| [`Project-2-Todo-List-App/`](Project-2-Todo-List-App/) | Add, edit, and delete tasks right in the browser with localStorage to keep them around forever. | HTML · CSS · JavaScript | [🚀 View Live](https://codepen.io/bhushcodes/full/emJMgXx) | ![To-do preview](https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif) |
+| *(Coming Soon)* | — | — | — | ![Coming soon](https://media.giphy.com/media/tXL4FHPSnVJ0A/giphy.gif) |
 
 ## Quickstart
 ```bash
