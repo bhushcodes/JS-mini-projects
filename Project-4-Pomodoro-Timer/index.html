@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A feature-rich Pomodoro Timer with customizable sessions, sound alerts, and progress tracking">
+    <meta name="keywords" content="pomodoro, timer, productivity, focus, time management">
+    <meta name="author" content="Bhushan">
+    <title>Pomodoro Timer - Stay Focused</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍅</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <div class="container">
+        <header>
+            <h1>🍅 Pomodoro Timer</h1>
+            <p class="subtitle">Stay focused, work smart</p>
+        </header>
+
+        <main>
+            <!-- Timer Section -->
+            <section class="timer-section">
+                <div class="session-info">
+                    <span id="sessionPhase" class="session-phase">Work Session</span>
+                    <span id="sessionCount" class="session-count">Session 1 of 4</span>
+                </div>
+
+                <!-- Progress Ring -->
+                <div class="timer-container">
+                    <svg class="progress-ring" width="320" height="320">
+                        <circle class="progress-ring-circle-bg" cx="160" cy="160" r="140"></circle>
+                        <circle id="progressRing" class="progress-ring-circle" cx="160" cy="160" r="140"></circle>
+                    </svg>
+                    <div class="timer-display">
+                        <div id="timeDisplay" class="time-display">25:00</div>
+                        <div id="timerStatus" class="timer-status">Ready to focus</div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <div class="controls">
+                    <button id="startPauseBtn" class="btn btn-primary" aria-label="Start timer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        <span>Start</span>
+                    </button>
+                    <button id="resetBtn" class="btn btn-secondary" aria-label="Reset timer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="1 4 1 10 7 10"></polyline>
+                            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                        </svg>
+                        <span>Reset</span>
+                    </button>
+                    <button id="skipBtn" class="btn btn-secondary" aria-label="Skip break">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                            <line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="2"></line>
+                        </svg>
+                        <span>Skip</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <h2>Today's Progress</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-value" id="completedSessions">0</div>
+                        <div class="stat-label">Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⏱️</div>
+                        <div class="stat-value" id="totalFocusTime">0m</div>
+                        <div class="stat-label">Focus Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔥</div>
+                        <div class="stat-value" id="longestStreak">0</div>
+                        <div class="stat-label">Best Streak</div>
+                    </div>
+                </div>
+
+                <!-- Weekly Chart -->
+                <div class="weekly-chart">
+                    <h3>This Week</h3>
+                    <div class="chart-container">
+                        <div class="chart-bar" data-day="Mon">
+                            <div class="bar-fill" style="height: 0%" data-value="0"></div>
+                            <span class="bar-label">M</span>
+                        </div>
+                        <div class="chart-bar" data-day="Tue">
+                            <div class="bar-fill" style="height: 0%" data-value="0"></div>
+                            <span class="bar-label">T</span>
+                        </div>
+                        <div class="chart-bar" data-day="Wed">
+                            <div class="bar-fill" style="height: 0%" data-value="0"></div>
+                            <span class="bar-label">W</span>
+                        </div>
+                        <div class="chart-bar" data-day="Thu">
+                            <div class="bar-fill" style="height: 0%" data-value="0"></div>
+                            <span class="bar-label">T</span>
+                        </div>
+                        <div class="chart-bar" data-day="Fri">
+                            <div class="bar-fill" style="height: 0%" data-value="0"></div>
+                            <span class="bar-label">F</span>
+                        </div>
+                        <div class="chart-bar" data-day="Sat">
+                            <div class="bar-fill" style="height: 0%" data-value="0"></div>
+                            <span class="bar-label">S</span>
+                        </div>
+                        <div class="chart-bar" data-day="Sun">
+                            <div class="bar-fill" style="height: 0%" data-value="0"></div>
+                            <span class="bar-label">S</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Settings Section -->
+            <section class="settings-section">
+                <h2>Settings</h2>
+                
+                <div class="settings-grid">
+                    <!-- Duration Settings -->
+                    <div class="setting-group">
+                        <label for="workDuration">
+                            <span class="setting-icon">💼</span>
+                            Work Duration (min)
+                        </label>
+                        <input type="number" id="workDuration" min="1" max="120" value="25" aria-describedby="workDurationError">
+                        <span id="workDurationError" class="error-message" role="alert"></span>
+                    </div>
+
+                    <div class="setting-group">
+                        <label for="shortBreakDuration">
+                            <span class="setting-icon">☕</span>
+                            Short Break (min)
+                        </label>
+                        <input type="number" id="shortBreakDuration" min="1" max="120" value="5" aria-describedby="shortBreakError">
+                        <span id="shortBreakError" class="error-message" role="alert"></span>
+                    </div>
+
+                    <div class="setting-group">
+                        <label for="longBreakDuration">
+                            <span class="setting-icon">🌴</span>
+                            Long Break (min)
+                        </label>
+                        <input type="number" id="longBreakDuration" min="1" max="120" value="15" aria-describedby="longBreakError">
+                        <span id="longBreakError" class="error-message" role="alert"></span>
+                    </div>
+
+                    <div class="setting-group">
+                        <label for="sessionsBeforeLongBreak">
+                            <span class="setting-icon">🔄</span>
+                            Sessions Before Long Break
+                        </label>
+                        <input type="number" id="sessionsBeforeLongBreak" min="1" max="10" value="4" aria-describedby="sessionsError">
+                        <span id="sessionsError" class="error-message" role="alert"></span>
+                    </div>
+                </div>
+
+                <!-- Toggle Settings -->
+                <div class="toggle-settings">
+                    <div class="toggle-group">
+                        <label class="toggle-label">
+                            <input type="checkbox" id="autoStartToggle" checked>
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-text">Auto-start next session</span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-group">
+                        <label class="toggle-label">
+                            <input type="checkbox" id="tickingSoundToggle">
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-text">Ticking sound</span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-group">
+                        <label class="toggle-label">
+                            <input type="checkbox" id="notificationsToggle" checked>
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-text">Desktop notifications</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Sound Controls -->
+                <div class="sound-controls">
+                    <div class="volume-control">
+                        <button id="muteBtn" class="btn-icon" aria-label="Mute/Unmute">
+                            <svg class="volume-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <path class="volume-waves" d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                            </svg>
+                            <svg class="mute-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                                <line x1="23" y1="9" x2="17" y2="15"></line>
+                                <line x1="17" y1="9" x2="23" y2="15"></line>
+                            </svg>
+                        </button>
+                        <input type="range" id="volumeSlider" min="0" max="100" value="70" aria-label="Volume control">
+                        <span id="volumeValue" class="volume-value">70%</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="keyboard-shortcuts">
+                Shortcuts: <kbd>Space</kbd> Start/Pause • <kbd>R</kbd> Reset • <kbd>S</kbd> Skip • <kbd>M</kbd> Mute
+            </p>
+        </footer>
+    </div>
+
+    <!-- Notification Banner (fallback) -->
+    <div id="notificationBanner" class="notification-banner" role="alert" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
